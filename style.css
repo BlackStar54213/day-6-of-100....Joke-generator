@@ -1,0 +1,140 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: public sans;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    text-align: center;
+    background-color: rgb(255, 153, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3.4vw;
+    color: yellow;
+}
+
+#joke {
+    font-size: 1.4vw;
+    color: white;
+    line-height: 30px;
+}
+
+button {
+    height: 30px;
+    background-color: white;
+    border: none;
+    font-size: 1.4vw;
+    color: orange;
+    font-weight: 600;
+    width: 190px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all .45s;
+    border: 1px solid orange;
+}
+
+li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: orange;
+    color: white;
+}
+
+input {
+    height: 30px;
+    width: 190px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+#menu {
+    display: none;
+}
+
+h3 {
+    margin: 20px 0px 20px 0px;
+}
+
+aside {
+    position: fixed;
+    width: 200px;
+    height: 50vh;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top: 20%;
+    left: 0%;
+    padding: 20px;
+    background-color: rgb(212, 212, 212);
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    aside {
+        position: static;
+        height: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        transition: ease .5s;
+    }
+
+    section {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 300px;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 8.4vw;
+        color: yellow;
+    }
+
+    #joke {
+        font-size: 4.4vw;
+        color: white;
+        line-height: 30px;
+    }
+
+    button {
+        font-size: 4vw;
+    }
+}
